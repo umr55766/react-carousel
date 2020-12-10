@@ -1,4 +1,7 @@
+import React from "react";
+
 import styled from "styled-components";
+
 
 function ProductCard(props) {
   const CardWrapper = styled.div`
@@ -25,7 +28,7 @@ function ProductCard(props) {
       <LeftAlignedLabel>{props.product.category}</LeftAlignedLabel>
       <img src={props.product.image}/>
       <ProductName primary={props.primary}>
-        {props.product.title.length > 15 ? props.product.title.substr(0, 15)+"..." : props.product.title}
+        {props.product.title.length > 13 ? props.product.title.substr(0, 13)+"..." : props.product.title}
       </ProductName>
       <LeftAlignedLabel>Rs. {props.product.price.toFixed(2)}</LeftAlignedLabel>
     </CardWrapper>
