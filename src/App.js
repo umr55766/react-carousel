@@ -43,13 +43,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <button onClick={() => gotoPreviousProduct(focusProductIndex)}>Previous</button>
+        <img src={"https://www.jiomart.com/assets/version1605113383/smartweb/images/icons/left_arrow.svg"} onClick={() => gotoPreviousProduct(focusProductIndex)} />
 
         <ProductCard product={products[previousFocusProductIndex]}/>
         <ProductCard product={products[focusProductIndex]} primary/>
         <ProductCard product={products[nextfocusProductIndex]}/>
 
-        <button onClick={() => gotoNextProduct(focusProductIndex)}>Next</button>
+        <img src={"https://www.jiomart.com/assets/version1605113383/smartweb/images/icons/right_arrow.svg"} onClick={() => gotoNextProduct(focusProductIndex)} />
       </header>
     </div>
   );
